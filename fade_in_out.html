@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            display: none;
+             background-color: red;
+
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            display: none;
+             background-color: rgb(39, 65, 179);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+
+    <button class="btn"> click</button>
+    <button class="btn1"> out</button>
+
+
+    <script>
+        
+        $(function (){
+            $(".btn").click(function(){
+                $(".box1").fadeIn(5000);
+                $(".box2").fadeIn(10000);
+            });
+             $(".btn1").click(function(){
+                $(".box2").fadeOut(10000);
+                $(".box1").fadeOut(5000);
+                
+            });
+
+        });
+
+    </script>
+    
+</body>
+</html>
