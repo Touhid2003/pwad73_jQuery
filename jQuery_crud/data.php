@@ -1,11 +1,6 @@
-my name is touhid.
-
 <?php
-   
-
-    if($_GET['Name'] === "Touhid"){
-        echo "Touhid is Here";
-    }else{
-        echo "Touhid is not here";
-    }
-?>
+if ($_GET['name'] == "Rokon") {
+    echo "Rokon is here";
+} else {
+    echo "Rokon nai";
+}
